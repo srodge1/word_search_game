@@ -34,7 +34,7 @@ def main():
                 print(row)
 
             print(word_search_game.search_valid_words(grid))
-            print("\n",time.time()-start,"\n")
+            print("\nTotal execution time : ",time.time()-start,"\n")
 
         else:
             sys.exit()

@@ -40,7 +40,7 @@ class WordSearch():
         return self.result
 
     def __get_valid_words(self, node, grid, row, col, part_word):
-        print(part_word)
+        #print(part_word)
         if node.is_end_char:
             # On finding the end character, invalidating it would make words
             # dictionary vulnerable for consecutive searches
