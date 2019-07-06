@@ -15,8 +15,9 @@ def main():
         with open(file_name, 'r') as file_handle:
             for word in file_handle:
                 words_dictionary.insert_word(word.rstrip())
-    except:
-        pass
+    except FileNotFoundError:
+        print("The file name provided doesn't exist. Try again!")
+        sys.exit()
 
     word_search_game = WordSearch(words_dictionary)
 
